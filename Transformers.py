@@ -86,8 +86,8 @@ class DecepticonLeader(Decepticon):
 def choose():
     for_fight = {}
     while True:
-        print("Select an action:\n1 - create Autobot\n2 - create Decepticon\n\
-        3 - see Autobots\n4 - see Decepticons\n"
+        print("Select an action:\n1 - create Autobot\n2 - create Decepticon\n"
+              "3 - see Autobots\n4 - see Decepticons\n"
               "5 - Form teams for fight\n6 - Start battle\n7 - Watch teams")
         n = str(input())
         if n == "1":
@@ -131,8 +131,8 @@ def choose():
                 print("")
                 while dec_unused != [] and auto_unused != []:
                     z = auto_unused[int(
-                        input("Write number of Autobot or write something to\
-                              exit and save teams: ")) - 1]
+                        input("Write number of Autobot or write something to"
+                              " exit and save teams: ")) - 1]
                     x = dec_unused[int(
                         input("Write number of Decepticon: ")) - 1]
                     for_fight[z] = x
